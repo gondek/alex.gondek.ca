@@ -1,0 +1,4 @@
+sass:
+  style: compressed
+  sass_dir: _scss
+exclude: ['README.md', 'CNAME', 'Gemfile', '.idea']

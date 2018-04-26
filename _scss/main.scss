@@ -1,0 +1,52 @@
+@import 'normalize';
+
+$font: #111;
+$font-light: #555;
+$background: #eee;
+
+body {
+  background: $background;
+  color: $font;
+  font-family: Georgia, Utopia, Charter, serif;
+  font-size: 1.2em;
+}
+
+.center {
+  text-align: center;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 2em;
+}
+
+.home {
+  &.wrapper {
+    max-width: 450px;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+}
+
+h1,
+h2 {
+  font-weight: 400;
+}
+
+a {
+  $link: #325386;
+  color: $link;
+
+  &:hover {
+    color: darken($link, 20%);
+    text-decoration: none;
+  }
+}
+
+.social-media-note {
+  color: #777;
+  font-style: italic;
+}
