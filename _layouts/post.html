@@ -1,0 +1,15 @@
+---
+layout: base
+---
+<small>
+    <a href="/">Back to home page</a>
+    {% if page.url != '/posts/' %}
+        | <a href="/posts">Back to posts</a>
+    {% endif %}
+</small>
+
+<h1>{{ page.title }}</h1>
+
+{{ content }}
+
+<script src="/assets/spotlight.bundle.js" defer></script>

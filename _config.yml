@@ -1,0 +1,14 @@
+title: Alex Gondek
+description: Personal Website
+url: ""
+baseurl: ""
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - .idea/
+  - justfile
+  - README.md
+  - CNAME
