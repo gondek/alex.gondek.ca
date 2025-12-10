@@ -1,0 +1,80 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-family: Georgia, Utopia, Charter, serif;
+  font-size: 1.2em;
+  line-height: 1.35;
+  color: #111;
+  background-color: #eee;
+}
+
+a {
+  color: #1c4f98;
+}
+
+a:hover {
+  color: #16253c;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 2rem;
+}
+
+p {
+  padding-bottom: .5rem;
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+.container.home {
+  max-width: 32rem;
+}
+
+.social-media-note {
+  color: #777;
+  font-style: italic;
+}
+
+.spotlight-group {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 500px) {
+    .spotlight-group {
+        grid-auto-rows: 100px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.spotlight-group a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    overflow: hidden;
+}
+.spotlight-group a:hover img {
+    filter: contrast(150%);
+}
