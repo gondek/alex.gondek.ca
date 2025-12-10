@@ -1,0 +1,16 @@
+{{define "base" -}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{template "title" .PageSpecificData}}</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container{{if .CssClass}} {{ .CssClass }}{{end}}">
+    {{template "content" .PageSpecificData -}}
+</div>
+</body>
+</html>
+{{end}}
