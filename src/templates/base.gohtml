@@ -9,7 +9,9 @@
 </head>
 <body>
 <div class="container{{if .CssClass}} {{ .CssClass }}{{end}}">
-    {{template "content" .PageSpecificData -}}
+    <div class="content">
+        {{template "content" .PageSpecificData -}}
+    </div>
 </div>
 </body>
 </html>

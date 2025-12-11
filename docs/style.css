@@ -25,7 +25,11 @@ a:hover {
 
 .container {
     max-width: 34rem;
-    margin: 2em auto;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 2rem;
 }
 
 p {
