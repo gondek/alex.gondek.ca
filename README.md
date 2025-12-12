@@ -5,6 +5,7 @@ My personal homepage, plus various posts and galleries.
 **Build Requirements**
 - `go` Language Toolchain (v1.25+)
 - `just` command runner (see [justfile](./justfile))
+- `imagemagick` (for `identify` and `mogrify` commands)
 - (optional) `busybox` and `inotifywait` (for `just watch_serve`)
 
 The site uses Go's HTML templating to generate a static site. The output, plus any static files,
